@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "564c19dd-398f-43f0-97b8-df21b4626177",
+		"name": "LRU_Cache",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31761756"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/cache/set/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key\" : \"bijoy\",\r\n    \"value\": \"mogor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/cache/set/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cache",
+						"set",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/cache/get/bijoy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/cache/get/bijoy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cache",
+						"get",
+						"bijoy"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
